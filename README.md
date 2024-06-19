@@ -1,50 +1,20 @@
-# Tiny Browser
+# Пример (Заготовка) WebView приложения на Aurora OS 4
 
-The project provides an example of using WebView.
+## Структура проекта
 
-The main purpose is to show a minimal application with WebView.
+Проект имеет стандартную структуру приложения на базе C++ и QML для ОС Аврора.
 
-## Terms of Use and Participation
+* Файл **[ru.antowka.Antowka.pro](ru.antowka.Antowka.pro)** описывает структуру проекта для системы сборки qmake.
+* Каталог **[icons](icons)** содержит иконки приложения для поддерживаемых разрешений экрана.
+* Каталог **[qml](qml)** содержит исходный код на QML и ресурсы интерфейса пользователя.
+    * Каталог **[cover](qml/cover)** содержит реализации обложек приложения.
+    * Каталог **[icons](qml/icons)** содержит дополнительные иконки интерфейса пользователя.
+    * Каталог **[pages](qml/pages)** содержит страницы приложения.
+  * Файл **[ru.antowka.Antowka.qml](qml/ru.antowka.Antowka.qml)** предоставляет реализацию окна приложения.
+* Каталог **[rpm](rpm)** содержит настройки сборки rpm-пакета.
+  * Файл **[ru.antowka.Antowka.spec](rpm/ru.antowka.Antowka.spec)** используется инструментом rpmbuild.
+* Каталог **[src](src)** содержит исходный код на C++.
+  * Файл **[ru.antowka.Antowka.cpp](src/ru.antowka.Antowka.cpp)** является точкой входа в приложение.
+* Каталог **[translations](translations)** содержит файлы перевода интерфейса пользователя.
+* Файл **[ru.antowka.Antowka.desktop](ru.antowka.Antowka.desktop)** определяет отображение и параметры запуска приложения.
 
-The source code of the project is provided under [the license](LICENSE.BSD-3-Clause.md),
-which allows its use in third-party applications.
-
-The [contributor agreement](CONTRIBUTING.md) documents the rights granted by contributors
-of the Open Mobile Platform.
-
-Information about the contributors is specified in the [AUTHORS](AUTHORS.md) file.
-
-[Code of conduct](CODE_OF_CONDUCT.md) is a current set of rules of the Open Mobile
-Platform which informs you how we expect the members of the community will interact
-while contributing and communicating.
-
-## Project Structure
-
-The project has a standard structure
-of an application based on C++ and QML for Aurora OS.
-
-* **[ru.auroraos.TinyBrowser.pro](ru.auroraos.TinyBrowser.pro)** file
-  describes the project structure for the qmake build system.
-* **[icons](icons)** directory contains the application icons for different screen resolutions.
-* **[qml](qml)** directory contains the QML source code and the UI resources.
-  * **[cover](qml/cover)** directory contains the application cover implementations.
-  * **[icons](qml/icons)** directory contains the additional custom UI icons.
-  * **[pages](qml/pages)** directory contains the application pages.
-  * **[ru.auroraos.TinyBrowser.qml](qml/ru.auroraos.TinyBrowser.qml)** file
-    provides the application window implementation.
-* **[rpm](rpm)** directory contains the rpm-package build settings.
-  * **[ru.auroraos.TinyBrowser.spec](rpm/ru.auroraos.TinyBrowser.spec)** file is used by rpmbuild tool.
-* **[src](src)** directory contains the C++ source code.
-  * **[ru.auroraos.TinyBrowser.cpp](src/ru.auroraos.TinyBrowser.cpp)** file is the application entry point.
-* **[translations](translations)** directory contains the UI translation files.
-* **[ru.auroraos.TinyBrowser.desktop](ru.auroraos.TinyBrowser.desktop)** file
-  defines the display and parameters for launching the application.
-  
-## Screenshots
-
-![screenshots](screenshots/screenshots.png)
-
-
-## This document in Russian / Перевод этого документа на русский язык
-
-- [README.ru.md](README.ru.md)
