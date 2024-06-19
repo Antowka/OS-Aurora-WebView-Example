@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+X-Nemo-Application-Type=silica-qt5
+Icon=ru.auroraos.TinyBrowser
+Exec=/usr/bin/ru.antowka.Antowka
+Name=AntowkaRu
+Name[ru]=АнтошкаРУ
+
+[X-Application]
+Permissions=WebView;Audio;Location;Internet;UserDirs;RemovableMedia;MediaIndexing
+OrganizationName=ru.antowka
+ApplicationName=Antowka
