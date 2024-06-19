@@ -1,44 +1,20 @@
-# Tiny Browser
-
-Проект предоставляет пример использования WebView.
-Главная цель проекта - показать минимальное приложение с WebView.
-
-## Условия использования и участия
-
-Исходный код проекта предоставляется по [лицензии](LICENSE.BSD-3-Clause.md),
-которая позволяет использовать его в сторонних приложениях.
-
-[Соглашение участника](CONTRIBUTING.md) регламентирует права,
-предоставляемые участниками компании «Открытая Мобильная Платформа».
-
-Информация об участниках указана в файле [AUTHORS](AUTHORS.md).
-
-[Кодекс поведения](CODE_OF_CONDUCT.md) — это действующий набор правил
-компании «Открытая Мобильная Платформа»,
-который информирует об ожиданиях по взаимодействию между членами сообщества при общении и работе над проектами.
+# Пример (Заготовка) WebView приложения на Aurora OS 4
 
 ## Структура проекта
 
 Проект имеет стандартную структуру приложения на базе C++ и QML для ОС Аврора.
 
-* Файл **[ru.auroraos.TinyBrowser.pro](ru.auroraos.TinyBrowser.pro)** описывает структуру проекта для системы сборки qmake.
+* Файл **[ru.antowka.Antowka.pro](ru.antowka.Antowka.pro)** описывает структуру проекта для системы сборки qmake.
 * Каталог **[icons](icons)** содержит иконки приложения для поддерживаемых разрешений экрана.
 * Каталог **[qml](qml)** содержит исходный код на QML и ресурсы интерфейса пользователя.
     * Каталог **[cover](qml/cover)** содержит реализации обложек приложения.
     * Каталог **[icons](qml/icons)** содержит дополнительные иконки интерфейса пользователя.
     * Каталог **[pages](qml/pages)** содержит страницы приложения.
-  * Файл **[ru.auroraos.TinyBrowser.qml](qml/ru.auroraos.TinyBrowser.qml)** предоставляет реализацию окна приложения.
+  * Файл **[ru.antowka.Antowka.qml](qml/ru.antowka.Antowka.qml)** предоставляет реализацию окна приложения.
 * Каталог **[rpm](rpm)** содержит настройки сборки rpm-пакета.
-  * Файл **[ru.auroraos.TinyBrowser.spec](rpm/ru.auroraos.TinyBrowser.spec)** используется инструментом rpmbuild.
+  * Файл **[ru.antowka.Antowka.spec](rpm/ru.antowka.Antowka.spec)** используется инструментом rpmbuild.
 * Каталог **[src](src)** содержит исходный код на C++.
-  * Файл **[ru.auroraos.TinyBrowser.cpp](src/ru.auroraos.TinyBrowser.cpp)** является точкой входа в приложение.
+  * Файл **[ru.antowka.Antowka.cpp](src/ru.antowka.Antowka.cpp)** является точкой входа в приложение.
 * Каталог **[translations](translations)** содержит файлы перевода интерфейса пользователя.
-* Файл **[ru.auroraos.TinyBrowser.desktop](ru.auroraos.TinyBrowser.desktop)** определяет отображение и параметры запуска приложения.
-  
-## Снимки экранов
+* Файл **[ru.antowka.Antowka.desktop](ru.antowka.Antowka.desktop)** определяет отображение и параметры запуска приложения.
 
-![screenshots](screenshots/screenshots.png)
-
-## This document in English
-
-- [README.md](README.md)
